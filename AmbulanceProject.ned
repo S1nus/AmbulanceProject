@@ -1,45 +1,51 @@
 import org.omnetpp.queueing.Classifier;
+import org.omnetpp.queueing.PassiveQueue;
 import org.omnetpp.queueing.Queue;
+import org.omnetpp.queueing.Server;
 import org.omnetpp.queueing.Sink;
 import org.omnetpp.queueing.Source;
 
 
 network AmbulanceProject
 {
-    @display("bgb=527,332");
+    @display("bgb=737,365");
     submodules:
         low_severity: Source {
             @display("p=82,58");
         }
-        medium_severity: Source {
-            @display("p=83,140");
-        }
         high_severity: Source {
             @display("p=87,238");
         }
-        dispatch: Classifier {
-            @display("p=230,142");
+        classifier: Classifier {
+            @display("p=185,142");
         }
-        ambulance1: Queue {
-            @display("p=333,58");
+        medium_severity: Source {
+            @display("p=85,142");
         }
-        ambulance2: Queue {
-            @display("p=333,142");
+        low_severity_queue: PassiveQueue {
+            @display("p=340,58");
         }
-        ambulance3: Queue {
-            @display("p=333,251");
+        medium_severity_queue: PassiveQueue {
+            @display("p=340,149");
+        }
+        high_severity_queue: PassiveQueue {
+            @display("p=340,271");
+        }
+        ambulance: Server {
+            @display("p=516,149");
         }
         hospital: Sink {
-            @display("p=433,157");
+            @display("p=618,152");
         }
     connections:
-        low_severity.out --> dispatch.in++;
-        medium_severity.out --> dispatch.in++;
-        high_severity.out --> dispatch.in++;
-        dispatch.out++ --> ambulance1.in++;
-        dispatch.out++ --> ambulance2.in++;
-        dispatch.rest --> ambulance3.in++;
-        ambulance1.out --> hospital.in++;
-        ambulance2.out --> hospital.in++;
-        ambulance3.out --> hospital.in++;
+        low_severity.out --> classifier.in++;
+        high_severity.out --> classifier.in++;
+        medium_severity.out --> classifier.in++;
+        classifier.out++ --> low_severity_queue.in++;
+        classifier.out++ --> medium_severity_queue.in++;
+        classifier.rest --> high_severity_queue.in++;
+        high_severity_queue.out++ --> ambulance.in++;
+        medium_severity_queue.out++ --> ambulance.in++;
+        low_severity_queue.out++ --> ambulance.in++;
+        ambulance.out --> hospital.in++;
 }

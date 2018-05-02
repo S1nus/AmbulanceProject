@@ -1,0 +1,104 @@
+version 2
+run General-0-20180502-16:51:27-5237
+attr configname General
+attr datetime 20180502-16:51:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AmbulanceProject
+attr processid 5237
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.low_severity.interArrivalTime exponential(1s)
+param **.medium_severity.interArrivalTime exponential(1s)
+param **.high_severity.interArrivalTime exponential(1s)
+param **.ambulance.serviceTime exponential(2s)
+param **.low_severity.numJobs 1000
+param **.low_severity.jobType 0
+param **.high_severity.numJobs 1000
+param **.high_severity.jobType 2
+param **.medium_severity.numJobs 1000
+param **.medium_severity.jobType 1
+
+vector 0 AmbulanceProject.low_severity_queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 AmbulanceProject.medium_severity_queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 AmbulanceProject.high_severity_queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 AmbulanceProject.hospital lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	0	0	0
+0	19	2.655478716641	1
+0	25	3.632485143034	2
+0	37	4.117613306756	3
+0	40	4.175997975849	4
+0	67	7.490910255777	5
+0	76	7.989782264793	6
+0	79	8.063467620258	7
+0	88	8.475045616501	8
+0	91	8.4954712049	9
+0	94	8.954719342155	10
+0	103	10.742207005594	11
+0	106	10.893437859259	12
+0	118	12.933752117201	13
+0	127	14.538991674263	14
+0	133	15.273956095453	15
+0	148	16.409895037163	16
+0	151	16.564624717663	17
+1	0	0	0
+1	10	1.255930758047	1
+1	13	2.043131898029	2
+1	34	3.922095952232	3
+1	55	6.145620374268	4
+1	73	7.817831574593	5
+1	100	9.626200838868	6
+1	109	11.131985097505	7
+1	121	13.172877313417	8
+1	130	14.78687938831	9
+1	145	16.3034153623	10
+1	154	17.175736557342	11
+2	0	0	0
+2	7	0.898560388484	1
+2	14	2.642320767508	0
+2	22	2.850105724368	1
+2	26	3.744417740849	0
+2	31	3.888265025032	1
+2	43	4.24142416417	2
+2	46	4.559780305012	3
+2	47	4.895456134615	2
+2	52	5.04338240996	3
+2	56	6.194348831117	2
+2	61	6.612278527583	3
+2	64	7.266161094804	4
+2	68	7.699697057743	3
+2	82	8.105593947704	4
+2	85	8.196754973828	5
+2	97	9.241367482136	6
+2	112	12.391537410812	7
+2	113	12.896205229441	6
+2	122	14.179623574797	5
+2	134	15.41748249405	4
+2	137	15.669231312926	3
+2	142	16.236759279954	4
+2	157	17.258191154303	5
+3	15	2.642320767508	1.846446262942
+3	27	3.744417740849	2.845857352365
+3	48	4.895456134615	2.045350410247
+3	57	6.194348831117	2.306083806085
+3	69	7.699697057743	3.458272893573
+3	114	12.896205229441	8.336424924429
+3	123	14.179623574797	9.136241164837
+3	135	15.41748249405	8.805203966467
+3	138	15.669231312926	8.403070218122
+
