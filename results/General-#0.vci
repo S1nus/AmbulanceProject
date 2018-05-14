@@ -1,15 +1,15 @@
-file 2851 1525294450                                            
+file 1865 1525445714                                            
 version 2
-run General-0-20180502-16:51:27-5237
+run General-0-20180504-10:52:37-1184
 attr configname General
-attr datetime 20180502-16:51:27
+attr datetime 20180504-10:52:37
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network AmbulanceProject
-attr processid 5237
+attr processid 1184
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -39,8 +39,8 @@ vector 3 AmbulanceProject.hospital lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	1342 402 0 151 0 16.564624717663 18 0 17 153 1785
-1	1744 260 0 154 0 17.175736557342 12 0 11 66 506
-2	2004 524 0 157 0 17.258191154303 24 0 7 74 320
-3	2528 322 15 138 2.642320767508 15.669231312926 9 1.846446262942 9.136241164837 47.182950999067 334.07948922423
+0	1342 96 0 40 0 4.175997975849 5 0 4 10 30
+1	1438 96 0 55 0 6.145620374268 5 0 4 10 30
+2	1534 225 0 56 0 6.194348831117 11 0 3 15 33
+3	1759 105 15 48 2.642320767508 4.895456134615 3 1.846446262942 2.845857352365 6.737654025554 15.69172617264
 
