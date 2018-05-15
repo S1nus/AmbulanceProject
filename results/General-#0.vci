@@ -1,24 +1,31 @@
-file 316917 1526348418                                          
+file 6921 1526354376                                            
 version 2
-run General-0-20180514-21:40:10-8479
+run General-0-20180514-23:18:45-15076
 attr configname General
-attr datetime 20180514-21:40:10
+attr datetime 20180514-23:18:45
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network AmbulanceProject
-attr processid 8479
+attr processid 15076
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 param **.low_severity.interArrivalTime exponential(1041s)
+param **.low_severity.jobPriority 0
 param **.medium_severity.interArrivalTime exponential(58s)
+param **.medium_severity.jobPriority 1
 param **.high_severity.interArrivalTime exponential(34s)
-param **.ambulance.serviceTime exponential(411s)
+param **.high_severity.jobPriority 2
+param **.ambulance1.serviceTime exponential(411s)
+param **.ambulance2.serviceTime exponential(411s)
+param **.ambulance3.serviceTime exponential(411s)
+param **.ambulance4.serviceTime exponential(411s)
+param **.ambulance5.serviceTime exponential(411s)
 param **.low_severity.numJobs 1000
 param **.low_severity.jobType 0
 param **.high_severity.numJobs 1000
@@ -39,8 +46,8 @@ vector 3 AmbulanceProject.hospital lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	1349 63815 0 17999 0 1276358.210871788882 2001 0 805 894736 507660096
-1	65164 61252 0 14413 0 857106.764626589545 2001 0 1000 1000000 666667000
-2	126416 59724 0 10168 0 432413.521627761244 1999 0 917 908009 551783831
-3	186140 130776 54 18003 409.995760242951 1276766.424780404026 3000 379.4447070345 856937.46205758 1332917510.1293 7.4501722097464e+14
+0	1664 85 0 407 0 2302.786163399958 4 0 3 6 14
+1	1749 1075 0 473 0 2701.107077497497 42 0 41 861 23821
+2	2824 2842 0 476 0 2719.231995977284 109 0 44 2442 72198
+3	5666 1254 43 469 320.258524440491 2698.943589282381 32 226.4809280215 1842.1971450607 29094.085666514 32273229.97527
 
