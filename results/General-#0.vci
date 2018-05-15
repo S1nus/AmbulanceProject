@@ -1,15 +1,15 @@
-file 6921 1526354376                                            
+file 192976 1526356644                                          
 version 2
-run General-0-20180514-23:18:45-15076
+run General-0-20180514-23:57:23-17486
 attr configname General
-attr datetime 20180514-23:18:45
+attr datetime 20180514-23:57:23
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network AmbulanceProject
-attr processid 15076
+attr processid 17486
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -26,6 +26,21 @@ param **.ambulance2.serviceTime exponential(411s)
 param **.ambulance3.serviceTime exponential(411s)
 param **.ambulance4.serviceTime exponential(411s)
 param **.ambulance5.serviceTime exponential(411s)
+param **.ambulance6.serviceTime exponential(411s)
+param **.ambulance7.serviceTime exponential(411s)
+param **.ambulance8.serviceTime exponential(411s)
+param **.ambulance9.serviceTime exponential(411s)
+param **.ambulance10.serviceTime exponential(411s)
+param **.ambulance11.serviceTime exponential(411s)
+param **.ambulance12.serviceTime exponential(411s)
+param **.ambulance13.serviceTime exponential(411s)
+param **.ambulance14.serviceTime exponential(411s)
+param **.ambulance15.serviceTime exponential(411s)
+param **.ambulance16.serviceTime exponential(411s)
+param **.ambulance17.serviceTime exponential(411s)
+param **.ambulance18.serviceTime exponential(411s)
+param **.ambulance19.serviceTime exponential(411s)
+param **.ambulance20.serviceTime exponential(411s)
 param **.low_severity.numJobs 1000
 param **.low_severity.jobType 0
 param **.high_severity.numJobs 1000
@@ -46,8 +61,8 @@ vector 3 AmbulanceProject.hospital lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	1664 85 0 407 0 2302.786163399958 4 0 3 6 14
-1	1749 1075 0 473 0 2701.107077497497 42 0 41 861 23821
-2	2824 2842 0 476 0 2719.231995977284 109 0 44 2442 72198
-3	5666 1254 43 469 320.258524440491 2698.943589282381 32 226.4809280215 1842.1971450607 29094.085666514 32273229.97527
+0	2425 1500 0 9894 0 36217.06305018419 55 0 6 97 303
+1	3925 24073 0 9879 0 36189.76257745751 859 0 32 7333 107745
+2	27998 38052 0 9858 0 36098.687175978816 1375 0 9 2537 8815
+3	66050 126925 62 18002 319.798701241457 1075757.087910139808 3000 0.030290563576 5355.134438875 1527663.896004 1591496493.061
 

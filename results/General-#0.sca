@@ -1,14 +1,14 @@
 version 2
-run General-0-20180514-23:18:45-15076
+run General-0-20180514-23:57:23-17486
 attr configname General
-attr datetime 20180514-23:18:45
+attr datetime 20180514-23:57:23
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network AmbulanceProject
-attr processid 15076
+attr processid 17486
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -25,6 +25,21 @@ param **.ambulance2.serviceTime exponential(411s)
 param **.ambulance3.serviceTime exponential(411s)
 param **.ambulance4.serviceTime exponential(411s)
 param **.ambulance5.serviceTime exponential(411s)
+param **.ambulance6.serviceTime exponential(411s)
+param **.ambulance7.serviceTime exponential(411s)
+param **.ambulance8.serviceTime exponential(411s)
+param **.ambulance9.serviceTime exponential(411s)
+param **.ambulance10.serviceTime exponential(411s)
+param **.ambulance11.serviceTime exponential(411s)
+param **.ambulance12.serviceTime exponential(411s)
+param **.ambulance13.serviceTime exponential(411s)
+param **.ambulance14.serviceTime exponential(411s)
+param **.ambulance15.serviceTime exponential(411s)
+param **.ambulance16.serviceTime exponential(411s)
+param **.ambulance17.serviceTime exponential(411s)
+param **.ambulance18.serviceTime exponential(411s)
+param **.ambulance19.serviceTime exponential(411s)
+param **.ambulance20.serviceTime exponential(411s)
 param **.low_severity.numJobs 1000
 param **.low_severity.jobType 0
 param **.high_severity.numJobs 1000
@@ -32,61 +47,61 @@ param **.high_severity.jobType 2
 param **.medium_severity.numJobs 1000
 param **.medium_severity.jobType 1
 
-scalar AmbulanceProject.low_severity created:last 3
+scalar AmbulanceProject.low_severity created:last 1000
 attr interpolationmode none
 attr title "the number of jobs created, last"
-scalar AmbulanceProject.high_severity created:last 80
+scalar AmbulanceProject.high_severity created:last 1000
 attr interpolationmode none
 attr title "the number of jobs created, last"
-scalar AmbulanceProject.medium_severity created:last 43
+scalar AmbulanceProject.medium_severity created:last 1000
 attr interpolationmode none
 attr title "the number of jobs created, last"
-scalar AmbulanceProject.low_severity_queue queueingTime:mean -nan
+scalar AmbulanceProject.low_severity_queue queueingTime:mean 1615.718056429
 attr interpolationmode none
 attr title "queueing time at dequeue, mean"
 attr unit s
-scalar AmbulanceProject.low_severity_queue queueingTime:max -nan
+scalar AmbulanceProject.low_severity_queue queueingTime:max 5182.896338608
 attr interpolationmode none
 attr title "queueing time at dequeue, max"
 attr unit s
-scalar AmbulanceProject.low_severity_queue queueLength:timeavg 1.110477468243
+scalar AmbulanceProject.low_severity_queue queueLength:timeavg 0.040526528175079
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar AmbulanceProject.low_severity_queue queueLength:max 3
+scalar AmbulanceProject.low_severity_queue queueLength:max 6
 attr interpolationmode sample-hold
 attr title "queue length, max"
 scalar AmbulanceProject.low_severity_queue dropped:count 0
 attr interpolationmode none
 attr title "drop event, count"
-scalar AmbulanceProject.medium_severity_queue queueingTime:mean -nan
+scalar AmbulanceProject.medium_severity_queue queueingTime:mean 465.40609376128
 attr interpolationmode none
 attr title "queueing time at dequeue, mean"
 attr unit s
-scalar AmbulanceProject.medium_severity_queue queueingTime:max -nan
+scalar AmbulanceProject.medium_severity_queue queueingTime:max 1574.7205999585
 attr interpolationmode none
 attr title "queueing time at dequeue, max"
 attr unit s
-scalar AmbulanceProject.medium_severity_queue queueLength:timeavg 19.765022379626
+scalar AmbulanceProject.medium_severity_queue queueLength:timeavg 0.18548099423223
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar AmbulanceProject.medium_severity_queue queueLength:max 41
+scalar AmbulanceProject.medium_severity_queue queueLength:max 32
 attr interpolationmode sample-hold
 attr title "queue length, max"
 scalar AmbulanceProject.medium_severity_queue dropped:count 0
 attr interpolationmode none
 attr title "drop event, count"
-scalar AmbulanceProject.high_severity_queue queueingTime:mean 754.56491916187
+scalar AmbulanceProject.high_severity_queue queueingTime:mean 48.522451288997
 attr interpolationmode none
 attr title "queueing time at dequeue, mean"
 attr unit s
-scalar AmbulanceProject.high_severity_queue queueingTime:max 1493.5325265488
+scalar AmbulanceProject.high_severity_queue queueingTime:max 258.55045792803
 attr interpolationmode none
 attr title "queueing time at dequeue, max"
 attr unit s
-scalar AmbulanceProject.high_severity_queue queueLength:timeavg 20.559783349411
+scalar AmbulanceProject.high_severity_queue queueLength:timeavg 0.030967741092299
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar AmbulanceProject.high_severity_queue queueLength:max 44
+scalar AmbulanceProject.high_severity_queue queueLength:max 9
 attr interpolationmode sample-hold
 attr title "queue length, max"
 scalar AmbulanceProject.high_severity_queue dropped:count 0
@@ -104,17 +119,17 @@ attr title "the total number of delays visited by arrived jobs, mean"
 scalar AmbulanceProject.hospital delaysVisited:max 0
 attr interpolationmode none
 attr title "the total number of delays visited by arrived jobs, max"
-scalar AmbulanceProject.hospital queuesVisited:mean 1.6875
+scalar AmbulanceProject.hospital queuesVisited:mean 0.762
 attr interpolationmode none
 attr title "the total number of queues visited by arrived jobs, mean"
 scalar AmbulanceProject.hospital queuesVisited:max 2
 attr interpolationmode none
 attr title "the total number of queues visited by arrived jobs, max"
-scalar AmbulanceProject.hospital totalServiceTime:mean 358.25760988702
+scalar AmbulanceProject.hospital totalServiceTime:mean 417.0151234071
 attr interpolationmode none
 attr title "the total time spent  by arrived jobs, mean"
 attr unit s
-scalar AmbulanceProject.hospital totalServiceTime:max 1580.3861882173
+scalar AmbulanceProject.hospital totalServiceTime:max 4205.5501530336
 attr interpolationmode none
 attr title "the total time spent  by arrived jobs, max"
 attr unit s
@@ -126,35 +141,80 @@ scalar AmbulanceProject.hospital totalDelayTime:max 0
 attr interpolationmode none
 attr title "the total time spent in delay nodes by arrived jobs, max"
 attr unit s
-scalar AmbulanceProject.hospital totalQueueingTime:mean 550.93256719155
+scalar AmbulanceProject.hospital totalQueueingTime:mean 92.206175260904
 attr interpolationmode none
 attr title "the total time spent in queues by arrived jobs, mean"
 attr unit s
-scalar AmbulanceProject.hospital totalQueueingTime:max 1432.5237100872
+scalar AmbulanceProject.hospital totalQueueingTime:max 5182.896338608
 attr interpolationmode none
 attr title "the total time spent in queues by arrived jobs, max"
 attr unit s
-scalar AmbulanceProject.hospital lifeTime:mean 909.19017707857
+scalar AmbulanceProject.hospital lifeTime:mean 509.22129866801
 attr interpolationmode none
 attr title "lifetime of arrived jobs, mean"
 attr unit s
-scalar AmbulanceProject.hospital lifeTime:max 1842.1971450607
+scalar AmbulanceProject.hospital lifeTime:max 5355.134438875
 attr interpolationmode none
 attr title "lifetime of arrived jobs, max"
 attr unit s
-scalar AmbulanceProject.ambulance1 busy:timeavg 0.9316426371141
+scalar AmbulanceProject.ambulance1 busy:timeavg 0.037172672931653
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar AmbulanceProject.ambulance2 busy:timeavg 0.94206754397166
+scalar AmbulanceProject.ambulance2 busy:timeavg 0.041669217378279
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar AmbulanceProject.ambulance3 busy:timeavg 0.96554176919876
+scalar AmbulanceProject.ambulance3 busy:timeavg 0.043212082014461
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar AmbulanceProject.ambulance4 busy:timeavg 0.97323374763421
+scalar AmbulanceProject.ambulance4 busy:timeavg 0.046714690676981
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar AmbulanceProject.ambulance5 busy:timeavg 0.98877412854586
+scalar AmbulanceProject.ambulance5 busy:timeavg 0.047091614001421
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance6 busy:timeavg 0.049301030174736
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance7 busy:timeavg 0.050330160874284
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance8 busy:timeavg 0.060268797096377
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance9 busy:timeavg 0.14388605571319
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance10 busy:timeavg 0.31926120462761
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance11 busy:timeavg 0.02978452075659
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance12 busy:timeavg 0.030144629742192
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance13 busy:timeavg 0.031748890664968
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance14 busy:timeavg 0.030385536472835
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance15 busy:timeavg 0.030289905008751
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance16 busy:timeavg 0.032033747048568
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance17 busy:timeavg 0.03287353028863
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance18 busy:timeavg 0.032140518066709
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance19 busy:timeavg 0.035450688504275
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.ambulance20 busy:timeavg 0.038446519839409
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
 
