@@ -1,0 +1,141 @@
+version 2
+run General-0-20180514-21:40:10-8479
+attr configname General
+attr datetime 20180514-21:40:10
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AmbulanceProject
+attr processid 8479
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.low_severity.interArrivalTime exponential(1041s)
+param **.medium_severity.interArrivalTime exponential(58s)
+param **.high_severity.interArrivalTime exponential(34s)
+param **.ambulance.serviceTime exponential(411s)
+param **.low_severity.numJobs 1000
+param **.low_severity.jobType 0
+param **.high_severity.numJobs 1000
+param **.high_severity.jobType 2
+param **.medium_severity.numJobs 1000
+param **.medium_severity.jobType 1
+
+scalar AmbulanceProject.low_severity created:last 1000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar AmbulanceProject.high_severity created:last 1000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar AmbulanceProject.medium_severity created:last 1000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar AmbulanceProject.low_severity_queue queueingTime:mean 523601.99415147
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar AmbulanceProject.low_severity_queue queueingTime:max 856551.34389875
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar AmbulanceProject.low_severity_queue queueLength:timeavg 410.10006528134
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar AmbulanceProject.low_severity_queue queueLength:max 805
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar AmbulanceProject.low_severity_queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar AmbulanceProject.medium_severity_queue queueingTime:mean 610232.59774417
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar AmbulanceProject.medium_severity_queue queueingTime:max 799027.55126164
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar AmbulanceProject.medium_severity_queue queueLength:timeavg 477.95163304762
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar AmbulanceProject.medium_severity_queue queueLength:max 1000
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar AmbulanceProject.medium_severity_queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar AmbulanceProject.high_severity_queue queueingTime:mean 198004.18654652
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar AmbulanceProject.high_severity_queue queueingTime:max 398070.62891006
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar AmbulanceProject.high_severity_queue queueLength:timeavg 154.92746247145
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar AmbulanceProject.high_severity_queue queueLength:max 917
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar AmbulanceProject.high_severity_queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar AmbulanceProject.ambulance busy:timeavg 0.99997607154087
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar AmbulanceProject.hospital generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar AmbulanceProject.hospital generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar AmbulanceProject.hospital delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar AmbulanceProject.hospital delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar AmbulanceProject.hospital queuesVisited:mean 1.9993333333333
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar AmbulanceProject.hospital queuesVisited:max 2
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar AmbulanceProject.hospital totalServiceTime:mean 425.57862457573
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar AmbulanceProject.hospital totalServiceTime:max 4205.5501530336
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar AmbulanceProject.hospital totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar AmbulanceProject.hospital totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar AmbulanceProject.hospital totalQueueingTime:mean 443880.2580852
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar AmbulanceProject.hospital totalQueueingTime:max 856551.34389875
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar AmbulanceProject.hospital lifeTime:mean 444305.83670978
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar AmbulanceProject.hospital lifeTime:max 856937.46205758
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+
